@@ -14,6 +14,10 @@ export class PhotoService {
     return await this.photoRepository.find();
   }
 
+  async findOneById(id: number): Promise<Photo> {
+    return await this.photoRepository.findOne(id);
+  }
+
   async create(): Promise<Photo> {
     // const createdPost = new this.photoRepository({name: 'asd'});
     const createdPhoto = new Photo();
