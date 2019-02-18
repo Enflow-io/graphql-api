@@ -21,7 +21,8 @@ import { join } from 'path';
     GraphQLModule.forRoot({
       typePaths: ['./**/*.graphql'],
     }),
-    PhotoModule],
+    PhotoModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
